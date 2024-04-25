@@ -6,12 +6,10 @@ export function  CreateNewUser () {
             <Title>Create New User</Title>
 
             <form className="">
-        <TextInput 
-        placeholder="coloca el nombre"
-        />
-        <TextInput placeholder="coloca el email"/>
-
-        <TextInput placeholder="Aqui el usurio de github" />
+             <TextInput placeholder="coloca el nombre" />
+             <TextInput placeholder="coloca el email"/>
+             <TextInput placeholder="Aqui el usurio de github" />
+             <div> <Button type="button" style={{marginTop:'16px'}}>Crear usuario</Button></div>
             </form>
         </Card>
     )
