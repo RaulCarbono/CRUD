@@ -28,23 +28,26 @@ export function ListOfUsers() {
             <TableHeaderCell>Id</TableHeaderCell>
             <TableHeaderCell>Nombre</TableHeaderCell>
             <TableHeaderCell>Email</TableHeaderCell>
+            <TableHeaderCell>Github</TableHeaderCell>
     
           </TableRow>
         </TableHead>
         <TableBody>
           {users.map((item) => (
             <TableRow key={item.name}>
+              <TableCell >
+                {item.id}
+                </TableCell>
               <TableCell style={{display:"flex", alignItems:"center"}}>
-                <img 
-                style={{width:"32px", height:"32px", borderRadius:"50%", marginRight:"8px"}}
+              <img 
+                style={{width:"24px", height:"24px", borderRadius:"50%", marginRight:"5px",}}
                 src={`https://unavatar.io/github/${item.github}`} alt={item.name} />
-                {item.name}</TableCell>
+                {item.name}
+              </TableCell>
               <TableCell>
                 {item.email}
               </TableCell>
-              <TableCell>
-                {item.github}
-              </TableCell>
+              {item.github}
               <TableCell>
               <button type='button'>
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
