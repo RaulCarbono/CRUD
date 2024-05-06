@@ -36,6 +36,9 @@ export const usersSLice = createSlice({
     name:"user",
     initialState,
     reducers:{
+        editUser:(state,action : PayloadAction<User>) => {
+            
+        },
         addNewUser: (state,action : PayloadAction<User>) => {
             const id = crypto.randomUUID()
             return [...state, {id, ...action.payload}]
